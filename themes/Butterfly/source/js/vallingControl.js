@@ -11,6 +11,5 @@ $(document).ready(function () {
         $(".hide").show();
         $(".show").hide();
     });
-
     
 });
