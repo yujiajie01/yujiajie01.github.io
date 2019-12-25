@@ -42,7 +42,7 @@ writer.introduce();
 
 ```
 ## 2、继承原型
-关于原型、原型链不了解可以戳这  <a href="http://nikoyu.asia/2019/12/04/JS-原型、原型链、构造器关系/" rel="nofollow" target="_blank"><strong>js 原型、原型链、构造器关系</strong></a></p>
+关于原型、原型链不了解可以戳这  <a href="https://nikoyu.asia/JS-原型、原型链、构造器关系.html" rel="nofollow" target="_blank"><strong>js 原型、原型链、构造器关系</strong></a></p>
 
 
 

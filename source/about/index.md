@@ -6,8 +6,8 @@ type: about
 ##Flink:
   友情链接
   我的Blog资料
-  Blog 名字： Niko
-  Blog 地址： http://nikoyu.asia
-  Blog 头像：http://nikoyu.asia/img/avatarx.png
-  Blog 简介： 人生苦短,及时行乐。
+   名字： Niko
+   地址： https://nikoyu.asia
+   头像：https://nikoyu.asia/img/avatarx.png
+   简介： 人生苦短,及时行乐。
  

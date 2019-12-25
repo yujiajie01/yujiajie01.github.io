@@ -6,11 +6,11 @@ class:
       link: https://jerryc.me/
       avatar: https://jerryc.me/img/avatar.png
       descr: 今日事,今日畢
-    # 2:
-    #   name: xxxxxx
-    #   link: https://www.xxxxxxcn/
-    #   avatar: https://xxxxx/avatar.png
-    #   descr: xxxxxxx  
+    2:
+      name: TRHX’S BLOG
+      link: https://www.itrhx.com/
+      avatar: https://www.itrhx.com/images/trhx.png
+      descr: 求知若饥，虚心若愚
 
 #  class2:
 #    class_name: 链接无效
