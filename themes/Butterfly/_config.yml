@@ -488,6 +488,7 @@ aside:
   card_ads: true
   card_map: true
   card_ip: true
+  card_clock: true
     
 # 網站公告
 announcement:
@@ -631,10 +632,11 @@ CDN_USE:
     - /js/third-party/baidu-autoPush.js
     - /js/third-party/auto-push-360.js
     - /js/third-party/live2d.js  # 看板娘
-    - /js/third-party/snow.js   # 网站背景下雪特效
+    # - /js/third-party/snow.js   # 网站背景下雪特效
     - /js/third-party/FunnyTitle.js   # 网站标题恶搞
     - /js/third-party/DigitalRain.js  # 数字雨
     - /js/third-party/font_size.js  # 彩色滚动字体
+    - /js/third-party/weather.js  # 天气控件
     - /js/vallingControl.js  # 自定义JQ （show-hide、load more）
    
     - /js/utils.js
