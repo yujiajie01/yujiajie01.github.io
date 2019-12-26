@@ -163,3 +163,7 @@ fields:
 - path
 - content:strip
 
+# MeingJS 支持 (3.0 新功能)
+aplayer:
+  meting: true
+  asset_inject: false
