@@ -8,9 +8,9 @@ comments: false
 ---
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.0.9/box/style.css">
 <body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+<script type="text/javascript" src="/js/third-party/baidu-autoPush.js"></script>
 	<script>
 		document.onkeydown = function () {
 			if (window.event && window.event.keyCode == 123) {
