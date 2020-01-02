@@ -30,6 +30,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  # - "source/tool/**"
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -56,7 +57,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 20
+  per_page: 12
   order_by: -date
 
 # Category & Tag
