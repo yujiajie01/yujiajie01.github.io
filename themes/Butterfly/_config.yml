@@ -5,7 +5,7 @@
 # xxx || icon:
 #   xxx || 連結 || icon
 menu:
-  庆余年在线看 : /qing/ || fa fa-film
+  # 庆余年在线看 : /qing/ || fa fa-film
   主页: / || fa fa-home
   文章: /archives/ || fa fa-archive
   List||fa fa-list:
@@ -17,8 +17,8 @@ menu:
   标签: /tags/ || fa fa-tags
   目录: /categories/ || fa fa-folder-open   
   工具箱 ||fas fa-tools: 
-  - 工具箱 /tool/ || fas fa-tools
-  - 旧工具箱 /tool/indexx || fas fa-tools
+    - 工具箱 || /tool/ || fas fa-tools
+    - 旧工具箱 ||  /tool/indexx || fas fa-tools
   留言板:  /guestbook/ || fa fa-comments
   友链: /link/ || fa fa-link
   关于我: /about/ || fa fa-heart
