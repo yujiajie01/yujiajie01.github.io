@@ -11,7 +11,13 @@ class:
       link: https://www.itrhx.com/
       avatar: https://www.itrhx.com/images/trhx.png
       descr: 求知若饥，虚心若愚
-
+    3:
+      name: Power_Liu
+      link: https://liuwx.cn/
+      avatar: https://liuwx.cn/image/avatar1.jpeg
+      descr: 
+      - 我全部的野心，就是自由的生活
+      - Hack it, you must be Know it，Know it then Hack it
 #  class2:
 #    class_name: 链接无效
 #    link_list:
