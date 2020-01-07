@@ -1,3 +1,18 @@
+//- if site.tags.length
+//-   .card_widget.card-tags
+//-     .card-content
+//-       .item_headline
+//-         i.fa.fa-tags(aria-hidden="true")
+//-         span= _p('aside.card_tags')
+//-       .card-tag-cloud
+//-         #myCanvasContainer
+//-           canvas#myCanvas 
+//-             p=('In Internet Explorer versions up to 8, things inside the canvas are inaccessible')           
+              
+//-         #tags
+//-           ul
+//-             != tagcloud({min_font: 16, max_font: 24, amount: 200, color: true, start_color: '#999', end_color: '#000'})       
+  
 if site.tags.length
   .card_widget.card-tags
     .card-content
@@ -5,3 +20,20 @@ if site.tags.length
         i.fa.fa-tags(aria-hidden="true")
         span= _p('aside.card_tags')
       .card-tag-cloud!= tagcloud({min_font: 16, max_font: 24, amount: 200, color: true, start_color: '#999', end_color: '#000'})
+
+ 
+
+
+      
+
+//- block container
+//-     include ../mixins/UI.pug
+//-     .archive
+//-         h2(class='archive-year')= 'Tag Cloud'
+//-         script(type='text/javascript', charset='utf-8', src='/oj-code/js/tagcloud.js')
+//-         script(type='text/javascript', charset='utf-8', src='/oj-code/js/tagcanvas.js')
+//-         #myCanvasContainer.widget.tagcloud(align='center')
+//-             canvas#resCanvas(width='500', height='500', style='width=100%')
+//-                 !=tagcloud()
+//-             !=tagcloud()
+//-     +postList()

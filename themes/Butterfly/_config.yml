@@ -640,6 +640,7 @@ CDN_USE:
     - /js/third-party/FunnyTitle.js   # 网站标题恶搞
     - /js/third-party/DigitalRain.js  # 数字雨
     - /js/third-party/font_size.js  # 彩色滚动字体
+    - /js/third-party/jquery.tagcanvas.min.js  # 云tags
     # - /js/third-party/weather.js  # 天气控件
     - /js/third-party/clock.js  # 新年倒数
     - /js/vallingControl.js  # 自定义JQ （show-hide、load more）
