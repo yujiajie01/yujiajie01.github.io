@@ -5,8 +5,8 @@ tags: U盘
 categories: 
 - hack
 comments: true
-cover: /img/2019/cover.jpg
-top_img: /img/2019/top.jpg
+cover: https://cdn.jsdelivr.net/gh/yujiajie01/imgHosting/yujiajie01-pic20200107155747.jpg
+top_img: https://cdn.jsdelivr.net/gh/yujiajie01/imgHosting/yujiajie01-pic20200107155753.jpg
 top: true
 ---
 <meta name="referrer" content="no-referrer" /><!--页面头部添加-->
