@@ -3516,6 +3516,36 @@ comments: false
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.fundebug.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="www.fundebug.com">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.4/box/images/logo/easeus.png" class="img-circle" width="40">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>fundebug</strong>
+                                </a>
+                                <p class="overflowClip_2">"Fundebug, 网站错误, web监控, 前端异常、js错误, 网页错误,  微信小程序错误, 小程序异常, 小程序报错, 小程序问题, 小程序JS错误, 资源加载异常, 网络请求错误, 堆栈追踪, Source Map, 用户行为、可视化重现、复现错误"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <!-- <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.mxunlei.com/product/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="www.mxunlei.com">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.4/box/images/logo/easeus.png" class="img-circle" width="40">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>迅雷一天会员</strong>
+                                </a>
+                                <p class="overflowClip_2">购买商品_MXUNLEI 迅雷白金超级会员账号一天 VIP账号日租用试用体验一天</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
             <br>
             <!--END IT工具箱 -->
@@ -4548,6 +4578,23 @@ comments: false
                                     <strong>f.lux</strong>
                                 </a>
                                 <p class="overflowClip_2">国外开源的护眼软件，通过根据时间调节屏幕颜色，减少蓝光对视力的影响</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.mxunlei.com/product/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="www.mxunlei.com">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.4/box/images/logo/easeus.png" class="img-circle" width="40">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>迅雷一天会员</strong>
+                                </a>
+                                <p class="overflowClip_2">购买商品_MXUNLEI 迅雷白金超级会员账号一天 VIP账号日租用试用体验一天</p>
                             </div>
                         </div>
                     </div>
