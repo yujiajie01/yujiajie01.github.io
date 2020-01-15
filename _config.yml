@@ -114,8 +114,8 @@ deploy:
 ##douban
 douban:
   user: nikoyu
-  # builtin: true  
-  builtin: false 
+  builtin: true  
+  # builtin: false 
   movie:
     title: '人生就是一场轮回' 
     quote: 'Wheel of life' 
