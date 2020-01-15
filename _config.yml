@@ -106,7 +106,8 @@ deploy:
     # - https://github.com/yujiajie01/yujiajie01.github.io.git
     # - git@git.coding.net:hezhou/hezhou.coding.me.git
     - git@e.coding.net:nikoyu/nikoyu.coding.me.git
-    - git@gitee.com:nikoyu/nikoyu.git  
+    # - git@gitee.com:nikoyu/nikoyu.git  
+    # - git@codehub.devcloud.cn-north-4.huaweicloud.com:nikoyu00001/nikoyu.git
     # - https://e.coding.net/nikoyu/nikoyu.coding.me.git  
   branch: master
 
