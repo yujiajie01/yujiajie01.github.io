@@ -6,6 +6,7 @@
 #   xxx || 連結 || icon
 menu:
   # 庆余年在线看 : /qing/ || fa fa-film
+  全国疫情: 2019-nCoV || fas fa-heart 
   主页: / || fa fa-home
   文章: /archives/ || fa fa-archive
   List||fa fa-list:
@@ -154,7 +155,8 @@ top_img: https://i.loli.net/2019/05/22/5ce53eb6dc82757840.jpg
 
 # if the banner of page not setting,it will show the top_img
 # default_top_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/top_img_index.jpg
-default_top_img: /img/top.jpg
+default_top_img: https://cdn.jsdelivr.net/gh/yujiajie01/imgHosting/yujiajie01-picindex_top.jpg
+# default_top_img: /img/top.jpg
 
 # the default cover of the post
 default_cover:
@@ -453,6 +455,7 @@ blog_title_font:
   font_link: https://fonts.googleapis.com/css?family=Titillium+Web #字體鏈接
   font-family: Titillium Web, PingFang SC, Hiragino Sans GB, "Microsoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif
 
+
 # 水平分隔綫
 hr:
   enable: false
@@ -636,9 +639,9 @@ CDN_USE:
     - /js/third-party/baidu-autoPush.js
     - /js/third-party/auto-push-360.js
     - /js/third-party/live2d.js  # 看板娘
-    # - /js/third-party/snow.js   # 网站背景下雪特效
+    - /js/third-party/snow.js   # 网站背景下雪特效
     - /js/third-party/FunnyTitle.js   # 网站标题恶搞
-    - /js/third-party/DigitalRain.js  # 数字雨
+    # - /js/third-party/DigitalRain.js  # 数字雨
     - /js/third-party/font_size.js  # 彩色滚动字体
     - /js/third-party/jquery.tagcanvas.min.js  # 云tags
     # - /js/third-party/weather.js  # 天气控件
