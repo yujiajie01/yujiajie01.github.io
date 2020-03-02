@@ -641,7 +641,7 @@ CDN_USE:
     - /js/third-party/live2d.js  # 看板娘
     - /js/third-party/snow.js   # 网站背景下雪特效
     - /js/third-party/FunnyTitle.js   # 网站标题恶搞
-    # - /js/third-party/DigitalRain.js  # 数字雨
+    - /js/third-party/DigitalRain.js  # 数字雨
     - /js/third-party/font_size.js  # 彩色滚动字体
     - /js/third-party/jquery.tagcanvas.min.js  # 云tags
     # - /js/third-party/weather.js  # 天气控件
