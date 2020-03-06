@@ -636,6 +636,7 @@ CDN_USE:
   js:
     # - https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js  
     - /js/third-party/jquery.min.js # 映入第三方js
+    - /js/third-party/aliRoute.js #标题旋转
     - /js/third-party/baidu-autoPush.js
     - /js/third-party/auto-push-360.js
     - /js/third-party/live2d.js  # 看板娘
@@ -646,8 +647,7 @@ CDN_USE:
     - /js/third-party/jquery.tagcanvas.min.js  # 云tags
     # - /js/third-party/weather.js  # 天气控件
     - /js/third-party/clock.js  # 新年倒数
-    - /js/vallingControl.js  # 自定义JQ （show-hide、load more）
-   
+    - /js/vallingControl.js  # 自定义评论隐藏显示 （show-hide、load more）   
     - /js/utils.js
     - /js/main.js
 
