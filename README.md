@@ -1,2 +1,2 @@
-# hexoblog-private 1
+# hexoblog-private test-add
 my-hexoblog-private
