@@ -1,0 +1,209 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>搭建个人ssr | Niko Yu Blog</title><meta name="description" content="搭建个人ssr"><meta name="keywords" content="ssr"><meta name="author" content="Niko Yu"><meta name="copyright" content="Niko Yu"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><script src="/js/baidupush.js"> </script><!-- cording rain --><meta name="google-site-verification" content="SIkZuB0qB43yRxFlnwpONBXa7oyHFzgXud5CuGXo6As"><script data-ad-client="ca-pub-2151024272856010" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><meta name="baidu-site-verification" content="xApr2ut4Zu"><meta name="msvalidate.01" content="30995771E117FBB3C378C4FD8DEEBD76"><meta name="360-site-verification" content="380293d343ad72c0cc14d1f53dcc8a31"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="搭建个人ssr"><meta name="twitter:description" content="搭建个人ssr"><meta name="twitter:image" content="https://www.nikoyu.asia/img/ssr.jpg"><meta property="og:type" content="article"><meta property="og:title" content="搭建个人ssr"><meta property="og:url" content="https://www.nikoyu.asia/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAssr"><meta property="og:site_name" content="Niko Yu Blog"><meta property="og:description" content="搭建个人ssr"><meta property="og:image" content="https://www.nikoyu.asia/img/ssr.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = '4'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.15/dist/snackbar.min.css"><link rel="canonical" href="https://www.nikoyu.asia/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAssr"><link rel="prev" title="hexo史上最全搭建教程" href="https://www.nikoyu.asia/hexo%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B.html"><link rel="dns-prefetch" href="https://hm.baidu.com"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?722792cc594e55cc7f38373ec0d3e0e5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><link rel="dns-prefetch" href="https://www.google-analytics.com"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-153441509-1', 'auto');
+ga('send', 'pageview');
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://www.nikoyu.asia","msgToTraditionalChinese":"简","msgToSimplifiedChinese":"繁"},
+  highlight_copy: 'true',
+  highlight_lang: 'true',
+  highlight_shrink: 'false',
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  copyright: {"languages":{"author":"作者: Niko Yu","link":"链接: https://www.nikoyu.asia/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAssr","source":"来源: Niko Yu Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  copy_copyright_js: true,
+  ClickShowText: {"text":"快乐+1","fontSize":"15px"},
+  medium_zoom: 'true',
+  Snackbar: {"bookmark":{"title":"Snackbar.bookmark.title","message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"}
+  
+}</script><link rel="alternate" href="/atom.xml" title="Niko Yu Blog" type="application/atom+xml">
+</head><body><div id="header"> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">Niko Yu Blog</a></span><i class="fa fa-bars fa-fw toggle-menu pull_right close" aria-hidden="true"></i><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="2019-nCoV"><i class="fa-fw fas fa-heart"></i><span> 全国疫情</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/games/"><i class="fa-fw fa fa-gamepad"></i><span> 游戏</span></a></li><li><a class="site-page" href="/photo/"><i class="fa-fw fas fa-images"></i><span> 相片</span></a></li><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fa fa-book"></i><span> 书籍</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-tools" aria-hidden="true"></i><span> 工具箱</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/tool/"><i class="fa-fw fas fa-tools"></i><span> 工具箱</span></a></li><li><a class="site-page" href="/tool/indexx"><i class="fa-fw fas fa-tools"></i><span> 旧工具箱</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/guestbook/"><i class="fa-fw fa fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="lazyload avatar_img" src="/img/avatarx.png" onerror="onerror=null;src='/img/avatar.png'"></div><div class="mobile_post_data"><div class="mobile_data_item is_center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">28</div></a></div></div><div class="mobile_data_item is_center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">29</div></a></div></div><div class="mobile_data_item is_center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">11</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="2019-nCoV"><i class="fa-fw fas fa-heart"></i><span> 全国疫情</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/games/"><i class="fa-fw fa fa-gamepad"></i><span> 游戏</span></a></li><li><a class="site-page" href="/photo/"><i class="fa-fw fas fa-images"></i><span> 相片</span></a></li><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fa fa-book"></i><span> 书籍</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-tools" aria-hidden="true"></i><span> 工具箱</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/tool/"><i class="fa-fw fas fa-tools"></i><span> 工具箱</span></a></li><li><a class="site-page" href="/tool/indexx"><i class="fa-fw fas fa-tools"></i><span> 旧工具箱</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/guestbook/"><i class="fa-fw fa fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于我</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#SSR"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">SSR</span></a></li></ol></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SSR"><span class="toc-number">1.</span> <span class="toc-text">SSR</span></a></li></ol></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://source.unsplash.com/collection/collectionid/1600x900)"><div id="post-info"><div id="post-title"><div class="posttitle">搭建个人ssr</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2019-11-01<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> 更新于 2020-09-17</time><span class="post-meta__separator mobile_hidden">|</span><span class="mobile_hidden"><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E9%BB%91%E7%A7%91%E6%8A%80/">黑科技</a></span><div class="post-meta-wordcount"><i class="fa fa-file-word-o post-meta__icon" aria-hidden="true"></i><span>字数总计: </span><span class="word-count">3.4k</span><span class="post-meta__separator">|</span><i class="fa fa-clock-o post-meta__icon" aria-hidden="true"></i><span>阅读时长: 10 分钟</span><span class="post-meta__separator">|</span><i class="fa fa-eye post-meta__icon" aria-hidden="true">       </i><span>阅读量: </span><span id="busuanzi_value_page_pv"></span></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" />
+<!-- <script src="https://cdn.jsdelivr.net/gh/yujiajie01/live2d-widget@V11/autoloadx.js"></script> -->
+
+
+<meta name="referrer" content="no-referrer" /><!--页面头部添加-->
+
+<h1 id="SSR"><a href="#SSR" class="headerlink" title="SSR"></a>SSR</h1><p>教程很简单，整个教程分三步：</p>
+<p>第一步：购买VPS服务器</p>
+<p>第二步：一键部署VPS服务器</p>
+<p>第三步：一键加速VPS服务器 （谷歌BBR加速，推荐）</p>
+<p>第一步：购买VPS服务器</p>
+<p>VPS服务器需要选择国外的，首选国际知名的vultr，速度不错、稳定且性价比高，按小时计费，能够随时开通和删除服务器，新服务器即是新ip。</p>
+<p>vultr注册地址： <a href="http://www.vultr.com（全球15个服务器位置可选，KVM框架，最低2.5美元/月。）" target="_blank" rel="noopener">http://www.vultr.com（全球15个服务器位置可选，KVM框架，最低2.5美元/月。）</a></p>
+<p>虽然是英文界面，但是现在的浏览器都有网页翻译功能，鼠标点击右键，选择网页翻译即可翻译成中文。</p>
+<p>注册并邮件激活账号，充值后即可购买服务器。充值方式是paypal（首选）或支付宝，使用paypal有银行卡（包括信用卡）即可。paypal注册地址：<a href="https://www.paypal.com" target="_blank" rel="noopener">https://www.paypal.com</a> （paypal是国际知名的第三方支付服务商，注册一下账号，绑定银行卡即可购买国外商品）</p>
+<p>2.5美元/月的服务器配置信息：单核 512M内存 20G SSD硬盘 带宽峰值100M 500G流量/月</p>
+<p>5美元/月的服务器配置信息： 单核 1G内存 25G SSD硬盘 带宽峰值100M 1000G流量/月</p>
+<p>10美元/月的服务器配置信息： 单核 2G内存 40G SSD硬盘 带宽峰值100M 2000G流量/月</p>
+<p>20美元/月的服务器配置信息： 2cpu 4G内存 60G SSD硬盘 带宽峰值100M 3000G流量/月</p>
+<p>40美元/月的服务器配置信息： 4cpu 8G内存 100G SSD硬盘 带宽峰值100M 4000G流量/月</p>
+<p>vultr实际上是折算成小时来计费的，比如服务器是5美元1个月，那么每小时收费为5/30/24=0.0069美元 会自动从账号中扣费，只要保证账号有钱即可。如果你部署的服务器实测后速度不理想，你可以把它删掉（destroy），重新换个地区的服务器来部署，方便且实用。因为新的服务器就是新的ip，所以当ip被封时这个方法很有用。当ip被封时，为了保证新开的服务器ip和原先的ip不一样，先开新服务器，开好后再删除旧服务器即可。</p>
+<p>计费从你开通服务器开始算的，不管你有没有使用，即使服务器处于关机状态仍然会计费，如果你没有开通服务器就不算。比如你今天早上开通了服务器，但你有事情，晚上才部署，那么这段时间是会计费的。同理，如果你早上删掉服务器，第二天才开通新的服务器，那么这段时间是不会计费的。在账号的Billing选项里可以看到账户余额。</p>
+<p>温馨提醒：同样的服务器位置，不同的宽带类型和地区所搭建的账号的访问速度会不同，这与中国电信、中国联通、中国移动国际出口带宽和线路不同有关，所以以实测为准。可以先选定一个服务器位置来按照教程进行搭建，熟悉搭建方法，当账号搭建完成并进行了bbr加速后，测试下速度自己是否满意，如果满意那就用这个服务器位置的服务器。如果速度不太满意，就一次性开几台不同的服务器位置的服务器，然后按照同样的方法来进行搭建并测试，选择最优的，之后把其它的服务器删掉，按小时计费测试成本可以忽略。</p>
+<p>账号充值如图：</p>
+<p>开通服务器步骤如图：</p>
+<p>选择vps操作系统时，不要选centos7系统！点击图中的CentOS几个字，会弹出centos6，然后选中centos6！entos7默认的防火墙可能会干扰ssr的正常连接！<br>接下来这一步是开启vps的ipv6 ip，选填项。如果你的电脑系统可以用ipv6，那么可以勾选此项。大多数用户没有这个需求，但有一些用户可能会用到，所以补充了这部分内容。</p>
+<p>完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统（推荐centos6）的密码获取方法如下图：</p>
+<p>如果你开启了vps的ipv6，那么在后台的settings选项可以找到服务器的ipv6 ip。在部署SSR账号时，你用ipv6 ip就行。整个部署及使用过程中，记得把电脑系统开启ipv6喔。</p>
+<p>删掉服务器步骤如下图：</p>
+<p>第二步：部署VPS服务器</p>
+<p>购买服务器后，需要部署一下。因为你买的是虚拟东西，而且又远在国外，我们需要一个叫Xshell的软件来远程部署。Xshell windows版下载地址：</p>
+<p>国外云盘1下载</p>
+<p>国外云盘2下载 提取密码：666</p>
+<p>国外云盘3下载 密码：123</p>
+<p>如果你是苹果电脑操作系统，更简单，无需下载xshell，系统可以直接连接VPS。打开终端（Terminal），输入ssh root@ip 其中“ip”替换成你VPS的ip, 按回车键，然后复制粘贴密码，按回车键即可登录。粘贴密码时有可能不显示密码，但不影响， 参考设置方法 如果不能用MAC自带的终端连接的话，直接网上搜“MAC连接SSH的软件”，有很多，然后通过软件来连接vps服务器就行，具体操作方式参考windows xshell。</p>
+<p>部署教程：</p>
+<p>下载xshell软件并安装后，打开软件</p>
+<p>选择文件，新建</p>
+<p>随便取个名字，然后把你的服务器ip填上</p>
+<p>连接国外ip即服务器时，软件会先后提醒你输入用户名和密码，用户名默认都是root，密码是你购买的服务器系统的密码。</p>
+<p>如果xshell连不上服务器，没有弹出让你输入用户名和密码的输入框，表明你开到的ip是一个被封的ip，遇到这种情况，重新开新的服务器，直到能用xshell连上为止，耐心点哦！如果同一个地区开了多台服务器还是不行的话，可以换其它地区。</p>
+<p>连接成功后，会出现如上图所示，之后就可以复制粘贴代码部署了。</p>
+<p>CentOS6/Debian6/Ubuntu14 ShadowsocksR一键部署管理脚本：</p>
+<p>yum -y install wget</p>
+<p>wget -N –no-check-certificate <a href="https://softs.fun/Bash/ssr.sh" target="_blank" rel="noopener">https://softs.fun/Bash/ssr.sh</a> &amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh</p>
+<p>备用脚本：</p>
+<p>yum -y install wget</p>
+<p>wget -N –no-check-certificate <a href="https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh</a> &amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh</p>
+<p>———————————————————代码分割线————————————————</p>
+<p>复制上面的代码到VPS服务器里，按回车键，脚本会自动安装，以后只需要运行这个快捷命令就可以出现下图的界面进行设置，快捷管理命令为：bash ssr.sh</p>
+<p>如上图出现管理界面后，输入数字1来安装SSR服务端。如果输入1后不能进入下一步，那么请退出xshell，重新连接vps服务器，然后输入快捷管理命令bash ssr.sh 再尝试。</p>
+<p>根据上图提示，依次输入自己想设置的端口和密码 (密码建议用复杂点的字母组合，端口号为40-65535之间的数字)，回车键用于确认</p>
+<p>注：关于端口的设置，总的网络总端口有6万多个，理论上可以任意设置。但是有的地区需要设置特殊的端口才有效，一些特殊的端口比如80、143、443、1433、3306、3389、8080。</p>
+<p>如上图，选择想设置的加密方式，比如10，按回车键确认</p>
+<p>接下来是选择协议插件，如下图：</p>
+<p>选择并确认后，会出现上图的界面，提示你是否选择兼容原版，这里的原版指的是SS客户端（SS客户端没有协议和混淆的选项），可以根据需求进行选择，演示选择y</p>
+<p>之后进行混淆插件的设置。</p>
+<p>注意：如果协议是origin，那么混淆也必须是plain；如果协议不是origin，那么混淆可以是任意的。有的地区需要把混淆设置成plain才好用。因为混淆不总是有效果，要看各地区的策略，有时候不混淆（plain）让其看起来像随机数据更好。（特别注意：tls 1.2_ticket_auth容易受到干扰！请选择除tls开头以外的其它混淆！！！）</p>
+<p>进行混淆插件的设置后，会依次提示你对设备数、单线程限速和端口总限速进行设置，默认值是不进行限制，个人使用的话，选择默认即可，即直接敲回车键。</p>
+<p>注意：关于限制设备数，这个协议必须是非原版且不兼容原版才有效，也就是必须使用SSR协议的情况下，才有效！</p>
+<p>之后代码就正式自动部署了，到下图所示的位置，提示你下载文件，输入：y</p>
+<p>耐心等待一会，出现下面的界面即部署完成：</p>
+<p>根据上图就可以看到自己设置的SSR账号信息，包括IP、端口、密码、加密方式、协议插件、混淆插件，这些信息需要填入你的SSR客户端。如果之后想修改账号信息，直接输入快捷管理命令：bash ssr.sh 进入管理界面，选择相应的数字来进行一键修改。例如：</p>
+<p>脚本演示结束。</p>
+<p>此脚本是开机自动启动，部署一次即可。最后可以重启服务器确保部署生效（一般情况不重启也可以）。重启需要在命令栏里输入reboot ，输入命令后稍微等待一会服务器就会自动重启，一般重启过程需要2～5分钟，重启过程中Xshell会自动断开连接，等VPS重启好后才可以用Xshell软件进行连接。如果部署过程中卡在某个位置超过10分钟，可以用xshell软件断开，然后重新连接你的ip，再复制代码进行部署。</p>
+<p>第三步：一键加速VPS服务器</p>
+<p>此加速教程为谷歌BBR加速,Vultr的服务器框架可以装BBR加速，加速后对速度的提升很明显，所以推荐部署加速脚本。该加速方法是开机自动启动，部署一次就可以了。</p>
+<p>按照第二步的步骤，连接服务器ip，登录成功后，在命令栏里粘贴以下代码：</p>
+<p>【谷歌BBR加速教程】</p>
+<p>yum -y install wget</p>
+<p>wget –no-check-certificate <a href="https://github.com/teddysun/across/raw/master/bbr.sh" target="_blank" rel="noopener">https://github.com/teddysun/across/raw/master/bbr.sh</a></p>
+<p>chmod +x bbr.sh</p>
+<p>./bbr.sh</p>
+<p>把上面整个代码复制后粘贴进去，不动的时候按回车，然后耐心等待，最后重启vps服务器即可。</p>
+<p>演示开始，如图：</p>
+<p>复制并粘贴代码后，按回车键确认</p>
+<p>如下图提示，按任意键继续部署</p>
+<p>部署到上图这个位置的时候，等待3～6分钟</p>
+<p>最后输入y重启服务器，如果输入y提示command not found ，接着输入reboot来重启服务器，确保加速生效，bbr加速脚本是开机自动启动，装一次就可以了。</p>
+<p>购买vps服务器后，ip有了，通过部署，端口、密码、加密方式、协议和混淆也有了，最后将这些信息填入SSR客户端就可以访问外网啦。</p>
+<p>有了账号后，打开SSR客户端，填上信息，这里以windows版的SSR客户端为例子：</p>
+<p>在对应的位置，填上服务器ip、服务器端口、密码、加密方式、协议和混淆，最后将浏览器的代理设置为（http）127.0.0.1和1080即可。账号的端口号就是你自己设置的，而要上网的浏览器的端口号是1080，固定的，谷歌浏览器可以通过 SwitchyOmega 插件来设置。</p>
+<p>启动SSR客户端后，右键SSR客户端图标，选择第一个“系统代理模式”，里面有3个子选项，选择”全局模式“，之后就可以用浏览器设置好了的代理模式（http）127.0.0.1和1080翻墙，此模式下所有的网站都会走SSR代理。（适合新手）</p>
+<p>ssr9000</p>
+<p>方法二<br>最近准备新安装一个。发现上面执行安装时，出错，安装不下去，<br>执行以下命令</p>
+<p>wget –no-check-certificate <a href="https://freed.ga/github/shadowsocksR.sh" target="_blank" rel="noopener">https://freed.ga/github/shadowsocksR.sh</a>; bash shadowsocksR.sh<br>若提示：wget :command not found<br>请执行：yum install wget -y<br>然后再按照提示走就行了</p>
+<p>QQ截图20180802123036</p>
+<p>这张图注意保存<br>走到这一步，还有些不够，网速很慢，几乎慢到连不到网，所以进行第三步。</p>
+<p>锐速安装<br>一键更换内核脚本（Vultr需先执行此脚本）</p>
+<p>wget -N –no-check-certificate <a href="https://freed.ga/kernel/ruisu.sh" target="_blank" rel="noopener">https://freed.ga/kernel/ruisu.sh</a> &amp;&amp; bash ruisu.sh<br>脚本安装需要1-3分钟，耐心等待服务器重启，服务器重启之后，重新连接继续安装就行了。</p>
+<p>锐速安装脚本</p>
+<p>wget -N –no-check-certificate <a href="https://github.com/91yun/serverspeeder/raw/master/serverspeeder.sh" target="_blank" rel="noopener">https://github.com/91yun/serverspeeder/raw/master/serverspeeder.sh</a> &amp;&amp; bash serverspeeder.sh<br>QQ截图20180802123416</p>
+<p>出现这些就算大功告成了。电脑连接可查看 上面连接教程就行了  </p>
+<hr>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined" target="_blank" rel="noopener">Niko Yu</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://www.nikoyu.asia/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAssr.html">https://www.nikoyu.asia/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAssr.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.nikoyu.asia">Niko Yu Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/ssr/">ssr    </a></div><div class="post_share"><div class="social-share" data-image="/img/ssr.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button"><i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/wechat.jpg"><div class="post-qr-code__desc">微信支付</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/alipay.jpg"><div class="post-qr-code__desc">支付宝</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/wechatx.jpg"><div class="post-qr-code__desc">私人微信</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull-full"><a href="/hexo%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B.html"><img class="prev_cover lazyload" data-src="/img/hexo.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>hexo史上最全搭建教程</span></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = true == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'oIAjy7lyxLnyErDm205dstGc-gzGzoHsz',
+  appKey:'nnS7FwjaeQOLfkWDj4E9zbBL',
+  placeholder:'(#^.^#) 来呀造作呀~',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'12',
+  lang:'zh-cn',
+  recordIP: true
+});</script><div style="text-align:center">
+<button type="button" class="vmore vbtn show">点击开始评论~</button>
+<button type="button" class="vmore vbtn hide">点击隐藏评论~</button>
+</div><script src="/js/third-party/jquery.min.js"></script></div></div></div><footer id="footer" style="background-image: url(https://source.unsplash.com/collection/collectionid/1600x900)"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 By Niko Yu</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">简</a></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="/js/third-party/jquery.min.js"></script><script src="/js/third-party/aliRoute.js"></script><script src="/js/third-party/baidu-autoPush.js"></script><script src="/js/third-party/auto-push-360.js"></script><script src="/js/third-party/live2d.js"></script><script src="/js/third-party/snow.js"></script><script src="/js/third-party/FunnyTitle.js"></script><script src="/js/third-party/DigitalRain.js"></script><script src="/js/third-party/font_size.js"></script><script src="/js/third-party/jquery.tagcanvas.min.js"></script><script src="/js/third-party/clock.js"></script><script src="/js/vallingControl.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><canvas id="canvas" width="1440" height="900" ></canvas><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script async src="/js/search/local-search.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.15/dist/snackbar.min.js"></script><script src="/js/baidupush.js"> </script><script src="/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true; // make power mode colorful
+POWERMODE.shake = true; // turn off shake
+document.body.addEventListener('input', POWERMODE);
+</script><script src="/js/tw_cn.js"></script><script>translateInitilization()
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="/js/third-party/ClickShowText.js"></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
