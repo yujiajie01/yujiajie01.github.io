@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.nikoyu.asia/http-webService-webSocket-socket.html</loc>
+    <lastmod>2021-03-23</lastmod>
+  </url>
+  <url>
     <loc>https://www.nikoyu.asia/docker.html</loc>
-    <lastmod>2021-03-19</lastmod>
+    <lastmod>2021-03-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.nikoyu.asia/react%E7%BB%84%E4%BB%B6.html</loc>
+    <lastmod>2021-03-23</lastmod>
   </url>
   <url>
     <loc>https://www.nikoyu.asia/%E9%80%80%E4%BC%8D%E5%86%9B%E4%BA%BA%E8%A2%AB%E9%A1%B6%E6%9B%BF.html</loc>
