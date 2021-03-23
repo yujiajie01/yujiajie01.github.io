@@ -1,13 +1,15 @@
 ---
 title: "docker 小结"
-date: 2021-03-19 17:26:44
+date: "2021-03-19 17:26:44"
 tags:
   - docker
   - IT
 categories:
   - docker
 comments: true
-# top: true
+cover: https://cdn.jsdelivr.net/gh/yujiajie01/imgHosting/docker-c.jpeg
+top_img: https://cdn.jsdelivr.net/gh/yujiajie01/imgHosting/yujiajie01-pic肖战top.jpg
+top: true
 ---
 
 <meta name="referrer" content="no-referrer" /><!--页面头部添加-->
@@ -235,6 +237,6 @@ HEALTHCHECK </span><span class="pun">[选项]</span><span class="pln"> CMD </spa
 <pre class="prettyprint prettyprinted" style=""><span class="pln">ONBUILD </span><span class="pun">&lt;其它指令&gt;</span></pre>
 			<!-- 其他扩展 -->
 						
-			</div>
+</div>
 			
-		</div>
+</div>
