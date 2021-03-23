@@ -8,10 +8,7 @@ tags:
   - webService
   - IT
 categories:
-  - HTTP
-  - webSocket
-  - Socket
-  - webService
+  - IT
 comments: true
 
 cover: https://cdn.jsdelivr.net/gh/yujiajie01/imgHosting/20210323173702.png
