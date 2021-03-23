@@ -361,6 +361,27 @@
   </url>
   
   <url>
+    <loc>https://www.nikoyu.asia/tags/IT/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nikoyu.asia/tags/git/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nikoyu.asia/tags/github/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.nikoyu.asia/tags/HUAWEI/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
@@ -389,27 +410,6 @@
   </url>
   
   <url>
-    <loc>https://www.nikoyu.asia/tags/IT/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nikoyu.asia/tags/git/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nikoyu.asia/tags/github/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.nikoyu.asia/tags/Steam/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
@@ -431,7 +431,42 @@
   </url>
   
   <url>
+    <loc>https://www.nikoyu.asia/tags/HTTP/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nikoyu.asia/tags/webSocket/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nikoyu.asia/tags/Socket/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nikoyu.asia/tags/webService/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.nikoyu.asia/tags/news/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nikoyu.asia/tags/Pornhub/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -459,7 +494,7 @@
   </url>
   
   <url>
-    <loc>https://www.nikoyu.asia/tags/Pornhub/</loc>
+    <loc>https://www.nikoyu.asia/tags/react/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -508,6 +543,13 @@
   </url>
   
   <url>
+    <loc>https://www.nikoyu.asia/tags/2019/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.nikoyu.asia/tags/LOL/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
@@ -516,13 +558,6 @@
   
   <url>
     <loc>https://www.nikoyu.asia/tags/%E8%8B%B1%E9%9B%84%E8%81%94%E7%9B%9F/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nikoyu.asia/tags/2019/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -543,6 +578,13 @@
   </url>
   
   <url>
+    <loc>https://www.nikoyu.asia/tags/docker/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.nikoyu.asia/tags/U%E7%9B%98/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
@@ -551,48 +593,6 @@
   
   <url>
     <loc>https://www.nikoyu.asia/tags/hexo/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nikoyu.asia/tags/docker/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nikoyu.asia/tags/react/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nikoyu.asia/tags/HTTP/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nikoyu.asia/tags/webSocket/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nikoyu.asia/tags/Socket/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nikoyu.asia/tags/webService/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -608,13 +608,6 @@
   </url>
   
   <url>
-    <loc>https://www.nikoyu.asia/categories/%E6%83%85%E6%84%9F%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.nikoyu.asia/categories/%E5%B7%A5%E4%BD%9C%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
@@ -622,7 +615,7 @@
   </url>
   
   <url>
-    <loc>https://www.nikoyu.asia/categories/%E5%90%B9%E7%89%9B%E9%80%BC/</loc>
+    <loc>https://www.nikoyu.asia/categories/%E6%83%85%E6%84%9F%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -636,7 +629,14 @@
   </url>
   
   <url>
-    <loc>https://www.nikoyu.asia/categories/%E6%83%85%E6%84%9F%E7%94%9F%E6%B4%BB/%E7%94%B5%E5%BD%B1/</loc>
+    <loc>https://www.nikoyu.asia/categories/%E5%90%B9%E7%89%9B%E9%80%BC/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nikoyu.asia/categories/IT/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -644,6 +644,20 @@
   
   <url>
     <loc>https://www.nikoyu.asia/categories/%E5%90%B9%E7%89%9B%E9%80%BC/%E6%B8%B8%E6%88%8F/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nikoyu.asia/categories/react/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nikoyu.asia/categories/%E6%83%85%E6%84%9F%E7%94%9F%E6%B4%BB/%E7%94%B5%E5%BD%B1/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -671,13 +685,6 @@
   </url>
   
   <url>
-    <loc>https://www.nikoyu.asia/categories/hack/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.nikoyu.asia/categories/docker/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
@@ -685,35 +692,7 @@
   </url>
   
   <url>
-    <loc>https://www.nikoyu.asia/categories/react/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nikoyu.asia/categories/HTTP/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nikoyu.asia/categories/HTTP/webSocket/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nikoyu.asia/categories/HTTP/webSocket/Socket/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nikoyu.asia/categories/HTTP/webSocket/Socket/webService/</loc>
+    <loc>https://www.nikoyu.asia/categories/hack/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
