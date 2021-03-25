@@ -62,7 +62,7 @@ function HelloMessage(props) {
     return <h1>Hello World!</h1>;
 }
 ```
-<p>你也可以使用 ES6 class 来定义一个组件:</p>
+<p>你也可以使用 ES6 class 来定义一个组件: </p>
 ```
 class Welcome extends React.Component {
   render() {
